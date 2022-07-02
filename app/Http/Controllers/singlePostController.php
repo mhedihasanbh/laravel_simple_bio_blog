@@ -96,7 +96,7 @@ class singlePostController extends Controller
         $singlePost->death_cause    =    $request->date_cause;
         $singlePost->summary        =    $request->summary;
         $singlePost->save();
-       return redirect()->back()->with('message',' single Post add successfully');
+       return redirect()->back()->with('message',' Bio add successfully');
 
         
 
@@ -199,7 +199,7 @@ class singlePostController extends Controller
         $singlePost->summary        =    $request->summary;
         $singlePost->facts          =    $request->facts;
         $singlePost->save();
-       return redirect()->back()->with('message',' single Post update successfully');
+       return redirect()->back()->with('message',' Bio update successfully');
     }
 
     /**

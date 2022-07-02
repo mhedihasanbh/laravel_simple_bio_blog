@@ -10,7 +10,7 @@
             <div class="card">
                 <div class="card-body">
 
-                    <h4 class="card-title">Product Info Goes Here</h4>
+                    <h4 class="card-title">All Bio Here</h4>
                     <hr/>
                     <table class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                         <tr>
