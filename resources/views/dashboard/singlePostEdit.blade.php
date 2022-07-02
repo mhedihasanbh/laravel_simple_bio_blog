@@ -254,24 +254,7 @@
             
            
             <div class="col-lg-4 mx-auto mt-3">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="form-group mb-4">
-                            <label class="col-form-label">Publication Status</label>
-                            <hr/>
-                            <div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" checked name="status" id="inlineRadio1" value="1">
-                                    <label class="form-check-label" for="inlineRadio1">Published</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="status" id="inlineRadio2" value="0">
-                                    <label class="form-check-label" for="inlineRadio2">Unpublished</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
             <div class="col-lg-12 mt-3 mb-5">
                 <div class="card">

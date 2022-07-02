@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\Category;
+use App\Models\singlePost;
 use Illuminate\Http\Request;
 
 class categoryController extends Controller
@@ -60,7 +61,12 @@ class categoryController extends Controller
      */
     public function show($id)
     {
-        //
+      $singlePosts=singlePost::where('category_id',$id)->get();
+      $popularPosts = singlePost::get()->sortByDesc('view_count');
+        return view('home.categoryshow',[
+            'singlePosts'=>$singlePosts,
+            'popularPosts'=>$popularPosts
+        ]);
     }
 
     /**

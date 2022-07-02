@@ -10,6 +10,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 a{
     text-decoration: none;
 }
@@ -37,6 +38,13 @@ a{
   }
   .quora_icon{
   color:#B92B27;
+  }
+  .header_logo a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 900;
+    font-size: 24px;
   }
 
 .main_header ul{

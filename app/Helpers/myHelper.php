@@ -1,6 +1,9 @@
 <?php
+use Illuminate\Support\Str;
 use App\Models\WebsiteSetting as appModel;
 use App\Models\SocialMedia;
+use App\Models\Category;
+use App\Models\singlePost;
 
  if(!function_exists('soial_data')){
     function soial_data($name){
@@ -18,5 +21,22 @@ use App\Models\SocialMedia;
         
         }
 }
+
+if(!function_exists('category')){
+    function category(){
+        $category=Category::limit(2)->get();
+        return $category;
+    }
+ }
+ 
+ if(!function_exists('summaryLimit')){
+    function summaryLimit(){
+        $singlePosts=singlePost::latest()->paginate(15);
+        
+        return Str::words($singlePosts, 100, '...');
+    }
+ }
+
+;
  
 ?>

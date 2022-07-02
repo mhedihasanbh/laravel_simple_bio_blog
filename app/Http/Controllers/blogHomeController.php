@@ -5,6 +5,7 @@ use App\Models\Category;
 use App\Models\singlePost;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class blogHomeController extends Controller
 {
@@ -12,12 +13,12 @@ class blogHomeController extends Controller
    
     // $singlePosts= singlePost::all();
     $singlePosts=singlePost::latest()->paginate(15);
-    $categorys=Category::orderBy('id','asc')->limit(2)->get();
+     $categorys=Category::orderBy('id','asc')->limit(2)->get();
     $popularPosts = singlePost::get()->sortByDesc('view_count');
     
     
     return view('home.index',[
-      'categorys'=>$categorys,
+      // 'categorys'=>$categorys,
       'singlePosts'=>$singlePosts,
       'popularPosts'=>$popularPosts
       

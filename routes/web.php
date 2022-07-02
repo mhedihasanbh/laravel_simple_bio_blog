@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\blogHomeController;
+use App\Http\Controllers\SearchController;
 use App\Http\Controllers\categoryController;
 use App\Http\Controllers\singlePostController;
 use App\Http\Controllers\viewSinglePost;
@@ -23,6 +24,7 @@ use App\Http\Controllers\viewSinglePost;
 //     return view('welcome');
 // });
 Route::get('/', [App\Http\Controllers\blogHomeController::class, 'index']);
+Route::get('/search', [App\Http\Controllers\SearchController::class, 'search'])->name('search');
 Route::resource('/category', App\Http\Controllers\categoryController::class);
 Route::resource('/singlepost', App\Http\Controllers\singlePostController::class);
 Route::resource('/singlepostview', App\Http\Controllers\viewSinglePost::class);

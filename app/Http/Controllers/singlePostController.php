@@ -62,7 +62,9 @@ class singlePostController extends Controller
         } 
         
         $singlePost=new singlePost();
+
         $singlePost->post_tittle   =     $request->post_tittle;
+        $singlePost->category_id   =     $request->category_id;
         $singlePost->post_image    =     $imageurl;
         $singlePost->full_name     =     $request->full_name;
         $singlePost->profession    =     $request->profession;

@@ -1,12 +1,12 @@
 @extends('home.master')
 @section('content')
- <!---blog summary-->
- <section class="summary_area">
+<!---blog summary-->
+<section class="summary_area">
     <div class="container">
        <div class="row">
          <div class="col-md-6">
              <div class="summary_image">
-                 <img src="images/summary.png" class="rounded w-100">
+                 <img src="{{asset('/')}}images/summary.png" class="rounded w-100">
              </div>
          </div>
          <div class="col-md-6 summary_content_bg">
@@ -37,10 +37,11 @@
                                  <img src="{{asset($singlePost->post_image)}}" class="card-img-top" alt="...">
                                  <div class="card-body">
                                    <h5 class="card-title">{{$singlePost->post_tittle}}</h5>
-                                    
-                                    
-                                  
-                                  <p class="card-text">{!! $singlePost->summary !!} 
+                                    <p class="card-text"> {!! Str::of($singlePost->summary)->words(3, ' --')!!}</p> 
+                                   {{-- <p class="card-text">{!! Str::words($singlePost->summary, 8, ' ...') !!}  --}}
+
+                                 {{-- </p> --}}
+                                 <p class="card-text">{!! $singlePost->summary !!}
                                  
                                    <a href="{{route('singlepostview.show',$singlePost->id)}}" class="btn btn-primary">Read More</a>
                                  </div>
@@ -54,7 +55,7 @@
                      
                     
                  </div>
-                 {{ $singlePosts->links() }}
+                
                 
                 
              </div>

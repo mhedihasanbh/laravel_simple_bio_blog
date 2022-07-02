@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\singlePost;
+use App\Models\Category;
 
 class viewSinglePost extends Controller
 {
@@ -47,10 +48,12 @@ class viewSinglePost extends Controller
     public function show($id)
     {
         $singlepost=singlePost::find($id);
+        $categorys=Category::orderBy('id','asc')->limit(2)->get();
         $recentPosts=singlePost::latest()->paginate(15);
         return view('home.singlePost',[
             'singlepost'=>$singlepost,
-            'recentPosts'=>$recentPosts
+            'recentPosts'=>$recentPosts,
+            'categorys'=>$categorys
         ]);
     }
 
