@@ -1,25 +1,150 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@300;400&display=swap');
-/*font-family: 'Merriweather', serif; */
-/*font-family: 'Montserrat', sans-serif; */
-
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@800;600&display=swap');
+/* font-family: 'Raleway', sans-serif; */
+/* font-family: 'Source Sans Pro', sans-serif; */
 *{
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
 }
-
 a{
     text-decoration: none;
 }
 
-.header_area{
-    background-color:#F8F0ED;
-    padding: 20px 0px;
+.header-area{
+    padding: 20px 0;
 }
-.header_social_icon i{
+.header-nav ul li {
+   padding: 0px 14px;
+}
+.header-nav ul li a{
+  color:#000;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 17px;
+}
+.logon-area{
+    padding-top: 10px;
+}
+.ans-search-area{
+  background-color: #F5F5F5;
+  padding: 50px 0px;
+}
+.search-ans-content h2{
+  color:#161e2e;
+  text-transform: capitalize;
+  font-weight: 800;
+}
+
+.popular-category-area{
+  padding: 30px 0px;
+}
+.popular-category{
+  color:#d1570d;
+  text-align: center;
+}
+.table-category-item i{
+  color:#4FBD7F;
+  font-size: 40px;
+}
+.table-category-item a{
+  font-size: 20px;
+  text-decoration: none;
+}
+.category-td:hover{
+  background-color:#F4FBF7;
+}
+
+.section-one-area,.section-two-area,.section-three-area,.section-four-area{
+padding: 50px 50px;
+box-shadow: 1px 1px #F5F5F5;
+}
+.sign-up-area{
+  background-color: #FEEBDB;
+  padding: 60px 0px;
+}
+.signup-text{
+  padding-left: 20px;
+}
+.singup-btn{
+    background-color: #DA680B;
+    color: #fff;
+    padding: 12px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.signup-text h2{
+  text-transform:lowercase;
+  
+}
+.platform-featurs-area{
+  padding: 50px 0;
+  background-color: #F5F5F5;
+}
+.features-card{
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 4px 5px 10px rgb(0 0 0 / 20%);
+}
+.features-tittle{
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight:bolder;
+  color:#2f3337
+
+}
+.why-choose-area{
+    padding: 50px 50px;
+}
+.choose-us-content h2{
+    font-size: 23px;
+    color:#000;
+    font-style: bolder;
+}
+.choose-us-content p{
+    font-size: 14px;
+}
+.choose-accordion-tittle{
+  color: #000;
+  font-weight: 900;
+}
+.testimonial-area{
+    background-color: #F5F5F5;
+    padding: 30px 30px;
+
+}
+.testimonial-heading{
+    font-size: 26px;
+    padding: 16px 16px;
+}
+.testimonial-card{
+    flex-direction: row;
+  }
+  .owl-carousel .owl-item img {
+    display: block;
+    width: 20%;
+}
+.category-table-area{
+    padding: 40px 0px;
+}
+.footer-widget-area{
+    background-color: #000;
+    color:#fff;
+    padding: 50px 50px;
+}
+.footer-single-area ul{
+  list-style: none;
+}
+.footer-single-area ul li a{
+     color:#fff;
+}
+.footer-social-icon i{
     font-size: 25px;
     border-radius: 42%;
     padding: 0 2px;
@@ -39,136 +164,38 @@ a{
   .quora_icon{
   color:#B92B27;
   }
-  .header_logo a{
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #000;
-    font-weight: 900;
-    font-size: 24px;
-  }
-
-.main_header ul{
-
-}
-.main_header ul li{
-    display: inline-block;
-}
-.main_header ul li a{
-    color: #000;
-    text-transform: uppercase;
-    padding: 12px 15px;
-    text-decoration: none;
-    font-weight: 600;
-}
-.header_logo h2{
-    text-transform: uppercase;
-    font-size: 25px;
-    font-weight: 900;
-}
-
-.search_box input{
-    width: 86%;
-    border: navajowhite;
-    padding: 6px 20px;
-    border-radius: 17px;
-} 
-
-/*=====================
-summary area
-=====================*/
-.summary_area{
-    padding: 30px 0;
-}
-.summary_content_bg{
-    background-color:#F8F0ED;
-}
-.summary_content{
-    padding: 45px;
-}
-.summary_content h2{
-    text-transform: uppercase;
-}
-.main_post_area{
-    padding: 50px 0;
-}
-.popular_post_image{
-    
-}
-.popular_post_tittle{
-    font-size: 14px;
-}
-.footer_widget_area{
-    background-color: #F8F0ED;
-    padding: 50px 0px;
-}
-.footer_widget_heading {
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
-    padding-bottom: 20px;
-
-}
-.widget_other ul li a{
-   color:#000;
-}
-.footer_area{
-    background-color: #000;
-    color:#fff;
-    padding: 10px 0;
-    
-}
-/*===================
-single blog post
-====================*/
-.single_post_area{
+  /*==================================
+  category code question
+  ====================================*/
+  .page-tittle-area{
     background-color: #F5F5F5;
-    padding:50px 0px;
-}
-.single_post_left{
-    background-color: #fff;
-    padding: 25px 34px;
-    border-radius: 10px
-}
-.styled-table {
-    border-collapse: collapse;
-    margin: 25px 0;
-    font-size: 0.9em;
-    font-family: sans-serif;
-    min-width: 100%;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-}
-.styled-table thead tr {
-    background-color: #009879;
-    color: #ffffff;
-    text-align: left;
-}
-.styled-table th,
-.styled-table td {
-    padding: 12px 15px;
-}
-.styled-table tbody tr {
-    border-bottom: 1px solid #dddddd;
-}
-
-.styled-table tbody tr:nth-of-type(even) {
-    background-color: #f3f3f3;
-}
-
-.styled-table tbody tr:last-of-type {
-    border-bottom: 2px solid #009879;
-}
-.styled-table tbody tr.active-row {
-    font-weight: bold;
-    color: #009879;
-}
-.related_post{
-    background-color: #fff;
-    padding: 29px 20px;
-    border-radius: 12px;
-}
-.single_post_recent{
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 12px;
-
-}
+    padding: 40px 40px;
+  }
+  .code-question-area{
+    padding: 30px 0;
+  }
+  .popular-code-area{
+    padding: 50px 0;
+    background-color:#F5F5F5 ;
+  }
+  .question-heading{
+    font-size: 25px;
+    text-align: center;
+    background-color: #DA680B;
+    color: #fff;
+    padding: 7px 5px;
+  }
+  /*==============================
+  category code ans
+  ================================*/
+  .code-ans-input{
+    padding: 9px 20px;
+    border-radius: 20px;
+    border: 1px solid #000;
+  }
+  .code-ans-area{
+    padding: 30px 0;
+  }
+  .framework-ans-area{
+    padding: 50px 0px;
+  }
